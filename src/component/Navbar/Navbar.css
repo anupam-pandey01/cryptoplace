@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    border-bottom: 2px solid #3d3d3d;
+}
+.navbar ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.navbar-right select{
+    background: transparent;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+.navbar-right select option{
+    color: black;
+}
+.navbar-right button{   
+    border: none;
+    padding: 8px 10px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.navbar button img{
+    width: 14px;
+    margin-left: 3px;
+}
+.navbar li{
+    cursor: pointer;
+}
+.navbar .logo{
+    cursor: pointer;
+}
