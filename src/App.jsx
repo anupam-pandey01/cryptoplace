@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router'
 import Navbar from './component/Navbar/Navbar'
 import Home from './pages/Home/Home';
 import Coin from './pages/Coin/Coin'
+import Footer from './component/Footer/Footer';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/coin/:coinId' element={<Coin/>}/>
       </Routes>
+      <Footer/>
     </div>
   )
 }

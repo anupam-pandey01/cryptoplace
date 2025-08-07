@@ -32,10 +32,13 @@ useEffect(()=>{
          return(
           <div className='layout' key={index}>
             <p>{coin.market_cap_rank}</p>
-            <p><img src={coin.image} alt="" /> <span>{coin.id}</span></p>
-            <p>{coin.current_price} <span>{currency.symbol}</span></p>
-            <p style={{textAlign: "center"}}>24H Changes</p>
-            <p className='market-cap'>{coin.market_cap}</p>
+            <div>
+              <img src={coin.image} alt="" />
+              <p>{coin.name + " - " + coin.symbol}</p>
+            </div>
+            <p>{currency.symbol} {coin.current_price.toLocaleString()}</p>
+            <p style={{textAlign: "center"}} className={coin.price_change_percentage_24h > 0 ?"green":'red'}>{Math.floor(coin.price_change_percentage_24h * 100)/100}</p>
+            <p className='market-cap'>{currency.symbol} {coin.market_cap.toLocaleString()}</p>
           </div>
          )
         })}
