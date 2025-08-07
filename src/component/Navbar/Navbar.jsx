@@ -1,8 +1,9 @@
 import { useContext } from 'react';
-import './Navbar.css'
+import './Navbar.css';
 import logo from "../../assets/logo.png";
-import arrow_icon from '../../assets/arrow_icon.png'
+import arrow_icon from '../../assets/arrow_icon.png';
 import { CoinContex } from '../../Context/CoinContext';
+import { Link } from 'react-router';
 
 const Navbar = () => {
 
@@ -32,9 +33,11 @@ const Navbar = () => {
   }
   return (
     <div className='navbar'>
-      <img src={logo} alt="" className='logo'/>
+      <Link to={"/"}>
+        <img src={logo} alt="" className='logo'/>
+      </Link>
       <ul>
-        <li>Home</li>
+        <Link to={'/'}><li>Home</li></Link>
         <li>Feature</li>
         <li>Pricing</li>
         <li>Blog</li>
