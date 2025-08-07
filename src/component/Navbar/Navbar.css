@@ -37,3 +37,37 @@
 .navbar .logo{
     cursor: pointer;
 }
+
+@media(max-width: 950px){
+    .navbar{
+        padding: 10px 8%;
+    }
+    .navbar ul{
+        gap: 40px;
+    }
+    .navbar-right button{
+        padding: 6px 8px;
+    }
+    .navbar-right select{
+        padding: 3px;
+        margin-right: 18px;
+    }
+}
+@media(max-width: 850px){
+    .navbar{
+        padding: 10px 2%;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar-right button{
+        padding: 4px 6px;
+    }
+    .navbar-right button img{
+        width: 12px;
+    }
+    .navbar-right select{
+        padding: 2px;
+        margin-right: 16px;
+    }
+}
